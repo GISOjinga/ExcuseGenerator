@@ -11,24 +11,18 @@ window.onload = () => {
 
 
 let randomNumberGiver = () => {
-    let pronoun = ["The", "Our"];
-    let adj = ["great", "big"];
-    let noun = ["bird", "racoon"];
-    let verb = ["ate", "crushed"];
-    let pronoun2 = ["the", "our"];
-    let noun2 = ["dog.", "cat."];
+    let who = ['The dog','My grandma','His turtle','My bird'];
+    let action = ['ate','peed','crushed','broke'];
+    let what = ['my homework', 'the keys', 'the car'];
+    let when = ['before the class','right on time','when I finished','during my lunch','while I was praying'];
 
-    let randomPronoun = Math.floor(Math.random() * pronoun.length);
-    let randomAdj = Math.floor(Math.random() * adj.length);
-    let randomNoun = Math.floor(Math.random() * noun.length);
-    let randomVerb = Math.floor(Math.random() * verb.length);
-    let randomPronoun2 = Math.floor(Math.random() * pronoun2.length);
-    let randomNoun2 = Math.floor(Math.random() * noun2.length);
+    let randomWho = Math.floor(Math.random() * who.length);
+    let randomAction = Math.floor(Math.random() * action.length);
+    let randomWhat = Math.floor(Math.random() * what.length);
+    let randomWhen = Math.floor(Math.random() * when.length);
 
-    return pronoun[randomPronoun]
-        + " " + adj[randomAdj]
-        + " " + noun[randomNoun]
-        + " " + verb[randomVerb]
-        + " " + pronoun2[randomPronoun2]
-        + " " + noun2[randomNoun2];
+    return who[randomWho]
+        + " " + action[randomAction]
+        + " " + what[randomWhat]
+        + " " + when[randomWhen]
 };
